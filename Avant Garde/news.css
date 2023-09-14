@@ -1,0 +1,281 @@
+body
+{
+  background-image:url(images/concrete.jpg);
+  min-height: 200vh;
+}
+
+header
+{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    transition:0.6s;
+    padding:40px 100px;
+    z-index:100000;
+}
+header.sticky
+{
+    padding:15px 100px;
+    background:black ; 
+}
+header.logo
+{
+    position:relative;
+    font-weight:700;
+    color:#000000;
+    text-decoration:none;
+    font-size:2em;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    transition:0.6s;
+}
+header ul
+{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+header ul li
+{
+    position:relative;
+    list-style: none;
+}
+header ul li a
+{
+    position:relative;
+    margin: 0 15px;
+    text-decoration:none;
+    color:black;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+.banner
+{
+    position:relative;
+    width:100%;
+    height:20vh;
+}
+header.sticky .logo,
+header.sticky ul li a
+{
+    color:white;
+}
+.navbar_toggle 
+{
+    display: none;
+}
+
+/* newsletter grids */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.News_cont {
+  background-color: #81D8D0;
+  padding: 50px;
+  margin: auto;
+  max-width: 80%;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
+}
+
+/* form */
+
+.container {
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.container header {
+  position:relative;
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 500;
+  text-align: center;
+}
+.container .form {
+  margin-top: 30px;
+}
+.form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+.input-box label {
+  color: #333;
+}
+.form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #81D8D0;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+.form .gender-box {
+  margin-top: 20px;
+}
+.gender-box h3 {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.form :where(.gender-option, .gender) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+.form .gender {
+  column-gap: 5px;
+}
+.gender input {
+  accent-color: rgb(129, 216, 208);
+}
+.form :where(.gender input, .gender label) {
+  cursor: pointer;
+}
+.gender label {
+  color: #707070;
+}
+.address :where(input, .select-box) {
+  margin-top: 15px;
+}
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #707070;
+  font-size: 1rem;
+}
+.form button {
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: rgb(129, 216, 208);
+}
+.form button:hover {
+  background: rgb(0,128,128);
+}
+/*Responsive*/
+@media screen and (max-width: 500px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+  .form :where(.gender-option, .gender) {
+    row-gap: 15px;
+  }
+}
+
+       /* responsiveness for mobile */
+  @media only screen and (max-width : 992px){
+
+    .header{
+      flex-direction: column;
+      justify-content: space-around;
+      width: 100vw;
+      padding-top: 8%;
+      padding-bottom: 8%;
+      background-color: #000000;
+      font-size: 20px; 
+    }
+    .header.sticky
+    {
+        padding-top: 8%;
+        padding-bottom: 8%;
+        background:black ; 
+        
+    }
+    .main_nav{
+        display: none;
+    }
+    header ul li a
+    {
+        color:white;
+    }
+    
+    .show_nav{
+        padding-top: 40%;
+        display: flex;
+        width: 100vw;
+        height: 50vh;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .main_nav li{
+        width: 100%;
+        height: 50px;
+        font-size: 25px;
+        justify-content: center;
+        text-align: center;
+        padding: 0%;
+    }
+
+    .navbar_toggle {
+        position: absolute;
+        size:50%;
+        top:1vh;
+        right: 0px;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 30px;
+        color: #ffffff;
+        background: transparent;
+        border-color: transparent;
+        transition: all 0.6s linear;
+        cursor: pointer;
+        display: block;
+    }
+    .logo {
+        position:absolute;
+        top:1vh;
+        left: 0px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    
+    .News_cont {
+      padding: 25px;
+    }
+  
+    .form .column {
+      flex-wrap: wrap;
+    }
+    .form :where(.gender-option, .gender) {
+      row-gap: 15px;
+    }
+    } 

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Homepage</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+        <script src="https://kit.fontawesome.com/82f797382f.js" crossorigin="anonymous"></script>
+        <!-- bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    </head>    
+    <body class="d-flex flex-column min-vh-100">
+      <header class ="header">
+          <!-- Navigation bar -->
+          <a href="index.html#" class="logo">
+            <img src="images/Avant garde.png" alt="Logo">
+          </a>
+          
+            <!-- responsiveness line -->
+            <button class="navbar_toggle">
+            <i class="fas fa-bars"></i>
+          </button>   
+
+            <ul class="main_nav"> 
+              <li><a href="bauhaus.html" class="nav_links">Bauhaus</a></li>
+              <li><a href="contemporary.html" class="nav_links">Contemporary</a></li>
+              <li><a href="brutalism.html" class="nav_links">Brutalism</a></li>
+              <li><a href="decon.html" class="nav_links">Deconstructivism</a></li>
+            </ul>    
+
+      </header>
+        <section class = "banner"></section>
+        <script type ="text/javascript">
+          window.addEventListener("scroll",function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky",window.scrollY>0);
+          })
+        </script>
+
+  <!-- Image carousel -->
+  <!--https://webdesign.tutsplus.com/articles/best-css-and-javascript-carousel-tutorials--cms-92882-->
+  <div class="slideshow">
+    <ul class="slides">
+      <li class="slide is-active">
+        <div class="cover"
+          style="background-image: url(images/brutal3.jpg);"></div>
+      </li>
+      </li>
+      <li class="slide">
+        <div class="cover"
+          style="background-image: url(images/contemp1.jpg);"></div>
+          </li>
+      <li class="slide">
+        <div class="cover"
+          style="background-image: url(images/decon3.jpg);"></div>
+      </li>
+    </ul>
+    <div class="arrows">
+      <button class="arrow arrow-prev">
+        <span></span>
+      </button>
+      <button class="arrow arrow-next">
+        <span></span>
+      </button>
+    </div>
+    <div class="over-text">
+      <h2 class="over-name">Avant-garde</h2>
+      <h5 class="over-description">New and experimental ideas and methods in art, music, or literature.</h5>
+    
+    </div>
+  </div>
+  
+  <!-- Content -->
+  <!-- https://artincontext.org/what-is-architecture/-->
+  <!-- https://www.architecture.com/explore-architecture/modernism# -->
+  <div class="grid-container">
+    <div class="grid-item">
+      <img src="images/Architect1.jpg" alt="Image 1">
+    </div>
+    <div class="grid-item">
+      <p class="para_title"> <strong>What is architecture?</strong></p>
+      <p class="para">Architecture is the discipline of designing and building a range of structures that are used to meet both functional and aesthetic requirements. Since every culture has a unique relationship with the natural world and with the other cultures around them, the structures it creates convey a great deal about its traditions, history, environment, artistic sensibilities, and many other facets of everyday life.
+      </p>
+    </div>
+
+    <div class="grid-item">
+      <p class="para_title"><strong>Modernism in architecture</strong></p>
+      <p class="para">Rejecting ornament and embracing minimalism, Modernism became the single most important new style or philosophy of architecture and design of the 20th century. It was associated with an analytical approach to the function of buildings, a strictly rational use of (often new) materials, structural innovation and the elimination of ornament. It was also known as International Modernism or International Style, after an exhibition of modernist architecture in America in 1932 by the architect Philip Johnson.        
+      </p>
+    </div>
+    <div class="grid-item">
+      <img src="images/Architect2.jpg" alt="Image 2">
+    </div>
+  </div>
+  
+
+  <!-- Newsletter button -->
+  <section class ="button-section">
+    <div>
+      <a href ="news.html">
+        <button class="newsletter-button">Join our newsletter!</button>
+      </a>
+    </div>  
+  </section>
+        
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    </body>
+    <script type ="text/javascript" src ="index.js"></script>
+
+<!-- footer -->
+<footer class=" mt-auto bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-2 pb-0 ">
+    <section class="">
+      <p class="d-flex justify-content-center align-items-center">
+        <span class="me-3">Register for free</span>
+        <button type="button" class="btn btn-outline-light btn-rounded"> 
+          Sign up!
+        </button>
+      </p>
+    </section>
+    
+    <hr class="mb-2" />
+    <section class="mb-2">
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a> 
+      
+    </section>
+  </div>
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0);">
+    © 2023 Copyright:
+    <a class="text-white">Avant-garde.com</a>
+  </div>
+</footer>
+
+</html>
